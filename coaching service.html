@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrive Coaching</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #222;
+    }
+    header {
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: rgba(255,255,255,0.8);
+    }
+    .hero img {
+      max-width: 600px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    .section {
+      background-color: white;
+      margin: 30px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      width: 400px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    button, input[type="email"] {
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Coaching Logo">
+  <h1>Thrive Coaching</h1>
+  <p>Achieve Your Potential with Guided Growth</p>
+</header>
+
+<div class="hero">
+  <img src="hero.jpg" alt="Inspiration">
+  <h2>Your Journey Starts Here</h2>
+  <p>Personal, Group, and Business Coaching Tailored to You</p>
+</div>
+
+<div class="section">
+  <h2>Coaching Services</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="service1.jpg" alt="1-on-1">
+      <h3>1-on-1 Coaching</h3>
+      <p>Deep, personalized growth sessions to unlock your best self.</p>
+      <button><a href="1_to_1_coaching.html">Description</a></button>
+    </div>
+    <div class="card">
+      <img src="service2.jpg" alt="Group Coaching">
+      <h3>Group Coaching</h3>
+      <p>Shared growth, accountability, and support in small teams.</p>
+      <button><a href="group_coaching.html">Description</a></button>
+    </div>
+    <div class="card">
+      <img src="service3.jpg" alt="Business Mentoring">
+      <h3>Business Mentoring</h3>
+      <p>Entrepreneurial guidance for success and scale.</p>
+      <button><a href="mentoring_services.html">Description</a></button>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Products</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="product1.jpg" alt="Workbook">
+      <h3>Goal Mastery Workbook</h3>
+      <p>Plan, prioritize and win—step-by-step guidance.</p>
+    </div>
+    <div class="card">
+      <img src="product2.jpg" alt="Ebook">
+      <h3>Confidence Blueprint</h3>
+      <p>A self-guided eBook to build lasting inner strength.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p>Get updates, resources, and motivation weekly!</p>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</div>
+
+<div class="section">
+  <h2>Book a Session</h2>
+  <p>Schedule your discovery call now.</p>
+  <iframe src="https://calendly.com/yourname/session" width="100%" height="600" frameborder="0"></iframe>
+</div>
+
+<div class="section">
+  <h2>Pay for Coaching</h2>
+  <p>Secure payment via PayPal or Stripe</p>
+
+  <!-- PayPal Button -->
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+           border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+  </form>
+
+  <!-- Stripe Link -->
+  <a href="https://buy.stripe.com/test_xxx" target="_blank">
+    <button style="background-color: #635bff;">Pay with Stripe</button>
+  </a>
+</div>
+
+<div class="section">
+  <h2>Contact Us</h2>
+  <p>Always here to help you feel free to contact us incase of any problem</p>
+  <input type="text" placeholder="Name" required><br><br>
+  <input type="email" placeholder="Email" required><br><br>
+  <textarea cols="30" rows="10" placeholder="Message"></textarea><br><br>
+
+  <button>Submit</button>
+</div>
+
+
+<footer>
+  &copy; 2025 Thrive Coaching. Empowering Your Future.
+</footer>
+
+</body>
+</html>
